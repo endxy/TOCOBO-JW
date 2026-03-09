@@ -8,12 +8,12 @@ export const helloData = {
     radius: 24                         // 이미지 둥근 모서리(px)
   },
 
-  eyebrow: "Hello❤️ We are TOCOBO!",
+  
   title: "Follow <br/> Your Intuition",
   description:
-    "민감하고 섬세한 피부에 직관적인 처방을 제안합니다. <br/> 당신의 직감이 깨끗한 아름다움으로 이어지도록,<br/> 토코보의 진정성 있는 메시지로 응답할게요.",
+    "조이웍스엔코는 온라인 인테리어 가구를 시작으로 <br/> 가전제품과 스포츠 유통 시장까지 아우르는<br/> 종합 라이프 스타일 기업입니다.",
   cta: {
-    label: "MEET TOCOBO",
+    label: "MEET",
     href: "/about"
   }
 };
