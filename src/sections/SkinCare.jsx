@@ -11,11 +11,11 @@ const SkinCare = () => {
           Vegan Skincare
         </h2>
         <p className="txt">
-          피부에 건강한 영향력을 전달하고 꼭 필요한 성분만을 담아 <br />
-          놀라운 변화를 선사하는 비건 스킨케어 브랜드 토코보
+          조이웍스엔코는 ‘레이디 가구’와 이롭 음식물 처리기’ 를 비롯한 생활 가구· <br /> 가전 브랜드를 운영하며, <br />
+          글로벌 러닝 브랜드 ‘HOKA’의 오프라인 사업을 편입해 스포츠 유통 시장까지 <br /> 영역을 넓혀가고 있습니다.
         </p>
         <a href="#" className="btn">
-          meet tocobo
+          meet
         </a>
       </div>
       <div className="slider-wrap">
