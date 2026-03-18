@@ -3,7 +3,7 @@ export const helloData = {
 
   media: {
     type: "image",                     // "image" | "video"
-    src: img("tocobosun_final_s.gif"),   // public 폴더 기준
+    src: img("joywoks_final.png"),   // public 폴더 기준
     alt: "Pink square demo image",
     radius: 24                         // 이미지 둥근 모서리(px)
   },
