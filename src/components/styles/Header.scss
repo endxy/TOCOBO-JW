@@ -1,10 +1,15 @@
-header{
+header {
     position: fixed;
-    top:4rem;
+    top: 4rem;
     width: 100%;
     z-index: 5;
     height: 10.5rem;
     transition: all .3s;
+
+    @media screen and (max-width:1600px) {
+
+        height: 8rem;
+    }
 
     .inner {
         max-width: 160rem;
@@ -12,40 +17,79 @@ header{
         justify-content: space-between;
         align-items: center;
 
-        .nav-list{
+        .mob-nav-btn {
+            display: none;
+            @media screen and (max-width:1111px) {
+                
+                display: block;
+            }
+        }
+
+        .nav-list {
             display: flex;
             gap: 2rem;
-            a{
+
+            @media screen and (max-width:1600px) {
+                gap: 1rem;
+            }
+
+
+            @media screen and (max-width:1111px) {
+                display: none;
+            }
+
+
+            a {
                 display: block;
                 font-size: 1.8rem;
                 text-transform: capitalize;
-                color:var(--primary);
+                color: var(--primary);
                 padding: 0 .5rem;
                 position: relative;
-                &::after{
+
+                @media screen and (max-width:1600px) {
+                    font-size: 1.4rem;
+                }
+
+                &::after {
                     display: block;
                     position: absolute;
                     width: 0%;
                     height: .1rem;
                     background-color: var(--primary);
-                    content:"";
+                    content: "";
                     left: 0;
                     transition: width .3s ease;
                 }
-                &:hover::after{
+
+                &:hover::after {
                     width: 100%;
                 }
             }
         }
+
         h1.tit {
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
-        .util-list{
+
+        .util-list {
             display: flex;
             gap: 1.2rem;
+
+            @media screen and (max-width:1600px) {
+                li {
+                    width: 2.5rem;
+                }
+            }
+
+            @media screen and (max-width:1111px) {
+                li:not(:last-child) {
+                    display: none;
+                }
+            }
         }
     }
 }

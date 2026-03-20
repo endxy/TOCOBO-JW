@@ -1,5 +1,5 @@
 
-import { useState ,useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import './styles/main.scss'
 import Header from './components/Header'
 import Hero from './sections/Hero'
@@ -16,38 +16,45 @@ function App() {
 
   const [topBanner, setTopBanner] = useState('')
   const [isScrolled, setIsScrolled] = useState(false)
-
+  const [mNavOpen, setMNavOpen] = useState(false)
   useEffect(() => {
 
     AOS.init({
-      duration:400,
-      easing:'ease'
+      duration: 400,
+      easing: 'ease'
     });
-  },[])
+  }, [])
+  const handleMNavOpen = () => setMNavOpen(true)
+  const handleMNavClose = () => setMNavOpen(false)
 
 
-  useEffect(()=>{
+  useEffect(() => {
 
-    const handleScroll =()=>{
-      const scrollTop=window.scrollY
+    const handleScroll = () => {
+      const scrollTop = window.scrollY
 
-      setIsScrolled(scrollTop>200)
+      setIsScrolled(scrollTop > 200)
 
       // console.log(scrollTop)
     }
 
-    window.addEventListener('scroll',handleScroll)
+    window.addEventListener('scroll', handleScroll)
 
-  },[])
+  }, [])
 
-  const upTopBanner =()=>{
+  const upTopBanner = () => {
     setTopBanner('up')
   }
   return (
-    <div className={`app-container ${topBanner} ${isScrolled? 'scrolled':''} `}>
-      <FixedTopBtn/>
-      <TopBanner  onClick={upTopBanner}/>
-      <Header />
+    <div className={`app-container ${topBanner} ${isScrolled ? 'scrolled' : ''} `}>
+      <FixedTopBtn />
+      <TopBanner onClick={upTopBanner} />
+      <Header
+
+        mNavOpen={mNavOpen}
+        onNavOpen={handleMNavOpen}
+        onNavClose={handleMNavClose}
+      />
       <main>
         <section id="hero" className='section'>
           <Hero />
