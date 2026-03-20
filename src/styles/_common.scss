@@ -89,6 +89,10 @@ footer {
         margin: auto;
         position: relative;
         height: 100%;
+        @media screen and (max-width:1600px){
+            padding:0 2rem
+            
+        }
     }
 }
 
