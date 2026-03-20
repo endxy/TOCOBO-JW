@@ -3,7 +3,7 @@ export const categories = [
   {
     id: 61,
     slug: "make-up",
-    name: "메이크업",
+    name: "바우",
     href: "/category/make-up/61/",
     img: {
       src: img("cate-1.png"),
@@ -13,7 +13,7 @@ export const categories = [
   {
     id: 42,
     slug: "sun",
-    name: "선케어",
+    name: "책상",
     href: "/category/sun/42/",
     img: {
       src: img("cate-2.png"),
@@ -24,7 +24,7 @@ export const categories = [
   {
     id: 52,
     slug: "lip",
-    name: "립케어",
+    name: "서랍장",
     href: "/category/lip/52/",
     img: {
       src: img("cate-3.png"),
@@ -35,7 +35,7 @@ export const categories = [
   {
     id: 50,
     slug: "skincare",
-    name: "스킨케어",
+    name: "침대",
     href: "/category/skincare/50/",
     img: {
       src: img("cate-4.png"),
@@ -46,7 +46,7 @@ export const categories = [
   {
     id: 47,
     slug: "cleansing",
-    name: "클렌징",
+    name: "소파",
     href: "/category/cleansing/47/",
     img: {
       src: img("cate-5.png"),
@@ -57,7 +57,7 @@ export const categories = [
   {
     id: 28,
     slug: "setetc",
-    name: "세트/기타",
+    name: "드레스룸",
     href: "/category/setetc/28/",
     img: {
       src: img("cate-6.png"),
