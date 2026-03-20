@@ -20,7 +20,7 @@ export const heroSlides = [
   },
   {
     id: "hs-2",
-    title: "Hydration That Lasts",
+    title: "Ultimate Comfort Living, Upgrade Your Life.",
     subtitle: "Moisture Barrier Care",
     desc: "가볍지만 깊게, 산뜻한 촉촉함",
     ctaText: "컬러립밤 보러가기",
@@ -35,7 +35,7 @@ export const heroSlides = [
   },
   {
     id: "hs-3",
-    title: "Scent-Free, Worry-Free",
+    title: "Ultimate Comfort Living, Upgrade Your Life.",
     subtitle: "Sensitive Skin Friendly",
     desc: "민감 피부를 위한 무향 포뮬러",
     ctaText: "스타터 키트 보러가기",

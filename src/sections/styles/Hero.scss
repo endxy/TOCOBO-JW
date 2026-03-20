@@ -43,18 +43,18 @@
 
         &.hs-2 {
             h2.tit {
-                color: var(--main-slider02-tit)
+                color: var(--main-slider01-tit)
             }
 
             p.txt {
-                color: var(--main-slider02-sub)
+                color: var(--main-slider01-sub)
             }
 
             a.btn {
-                background: var(--s-gradient);
+                background: var(--p-gradient);
 
                 &:hover {
-                    color: var(--main-slider02-tit)
+                    color: var(--main-slider01-tit)
                 }
             }
         }
@@ -65,18 +65,18 @@
                 justify-content: center;
 
                 h2.tit {
-                    color: var(--main-slider03-tit)
+                    color: var(--main-slider01-tit)
                 }
 
                 p.txt {
-                    color: var(--main-slider03-sub)
+                    color: var(--main-slider01-sub)
                 }
 
                 a.btn {
-                    background: var(--t-gradient);
+                    background: var(--p-gradient);
 
                     &:hover {
-                        color: var(--main-slider03-tit)
+                        color: var(--main-slider01-tit)
                     }
                 }
             }
