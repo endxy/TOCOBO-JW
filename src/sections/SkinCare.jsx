@@ -8,7 +8,7 @@ const SkinCare = () => {
     <div className='inner skincare-inner'>
       <div className="t-wrap">
         <h2 className="tit">
-          Vegan Skincare
+          Brand
         </h2>
         <p className="txt">
           조이웍스엔코는 ‘레이디 가구’와 이롭 음식물 처리기’ 를 비롯한 생활 가구· <br /> 가전 브랜드를 운영하며, <br />

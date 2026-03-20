@@ -59,8 +59,9 @@ export const footerMenus = [
   },
   {
     title: "Career",
-    items: [{ label: "Recrult", href: "/Recrult" }],
-    items: [{ label: "Location", href: "/Location" }],
+    items: [
+            { label: "Recrult", href: "/Recrult" },
+            { label: "Location", href: "/Location" }],
   },
   {
     title: "Community",
