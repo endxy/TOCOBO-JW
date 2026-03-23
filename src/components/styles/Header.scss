@@ -6,9 +6,8 @@ header {
     height: 10.5rem;
     transition: all .3s;
 
-    @media screen and (max-width:1600px) {
-
-        height: 8rem;
+    @media screen and (max-width:1111px) {
+        height: 6.3rem;
     }
 
     .inner {
@@ -19,8 +18,9 @@ header {
 
         .mob-nav-btn {
             display: none;
+
             @media screen and (max-width:1111px) {
-                
+
                 display: block;
             }
         }
@@ -29,16 +29,6 @@ header {
             display: flex;
             gap: 2rem;
 
-            @media screen and (max-width:1600px) {
-                gap: 1rem;
-            }
-
-
-            @media screen and (max-width:1111px) {
-                display: none;
-            }
-
-
             a {
                 display: block;
                 font-size: 1.8rem;
@@ -46,10 +36,6 @@ header {
                 color: var(--primary);
                 padding: 0 .5rem;
                 position: relative;
-
-                @media screen and (max-width:1600px) {
-                    font-size: 1.4rem;
-                }
 
                 &::after {
                     display: block;
@@ -66,6 +52,12 @@ header {
                     width: 100%;
                 }
             }
+
+
+            @media screen and (max-width:1111px) {
+                display: none;
+
+            }
         }
 
         h1.tit {
@@ -73,21 +65,43 @@ header {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+
+            @media screen and (max-width:1111px) {
+                width: 12.4rem;
+            }
         }
 
         .util-list {
             display: flex;
             gap: 1.2rem;
 
-            @media screen and (max-width:1600px) {
-                li {
-                    width: 2.5rem;
-                }
-            }
+            li {
 
-            @media screen and (max-width:1111px) {
-                li:not(:last-child) {
-                    display: none;
+                @media screen and (max-width:1111px) {
+                    a{
+                        display: block;
+                        width: 3rem;
+                        position: relative;
+                        transform: translateX(-1rem);
+                        &::after{
+                            display: block;
+                            content:"0";
+                            width: 2rem;
+                            height: 2rem;
+                            background-color: var(--primary);
+                            text-align: center;
+                            align-content: center;
+                            border-radius: 50%;
+                            color: var(--bg);
+                            position: absolute;
+                            right: -2rem;
+                            top:0
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        display: none;
+                    }
                 }
             }
         }
