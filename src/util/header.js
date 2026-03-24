@@ -29,7 +29,7 @@ export const headerData = {
         },
         {
             id: 'skincare',
-            label: 'skincare',
+            label: 'brand',
             href: '#skincare',
             type: 'section'
         },

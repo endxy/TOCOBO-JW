@@ -1,27 +1,47 @@
-.instar-inner{
-    h2.tit {
-        color: var(--secondary);
-    }
-    p.txt {
-        font-family: 'Source Serif Pro',serif;
-        font-size: 2rem;
-        font-style: italic;
-    }
+.instar-inner {
+  h2.tit {
+    color: var(--secondary);
+  }
 
-    .instar-list{
-        display: flex;
-        gap: 1rem;
-        margin-top: 4rem;
-        flex-wrap: wrap;
-        li{
-            // flex:1;
-            width: 19%;
-            a{
-                display: block;
-                height: 21rem;
-                background-size: cover;
-                background-position: center;
-            }
-        }
+  p.txt {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2rem;
+    font-style: italic;
+  }
+
+  .instar-list {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+
+    li {
+      width: 19%;
+
+      @media (max-width: 1024px) {
+        width: 24%;
+      }
+
+      @media (max-width: 768px) {
+        width: 32%;
+      }
+
+      @media (max-width: 480px) {
+        width: 48%;
+      }
+
+      a {
+        display: block;
+
+        /* 🔥 핵심 (비율 해결) */
+        aspect-ratio: 1 / 1;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        font-size: 0;
+      }
     }
+  }
 }
